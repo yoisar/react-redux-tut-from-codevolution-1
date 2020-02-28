@@ -26,7 +26,7 @@ const initialCakeState = {
   numOfCake: 10
 };
 const initialIceCreamState = {
-  numOfIceCream: 20
+  numbOfIceCream: 20
 };
 //Redux  - Reducer
 const cakeReducer = (state = initialCakeState, action) => {
@@ -46,7 +46,7 @@ const iceCreamReducer = (state = initialIceCreamState, action) => {
     case BUY_ICECREAM:
       return {
         ...state,
-        numOfIceCream: state.numOfIceCream - 1
+        numbOfIceCream: state.numbOfIceCream - 1
       };
     default:
       return state;
