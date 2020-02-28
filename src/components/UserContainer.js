@@ -10,7 +10,7 @@ function UserContainer({ userData, fetchUsers }) {
 	return userData.loading
 		? (
 			<h2>
-				Loading user data...
+				Loading user data... 
 		</h2>
 		)
 
@@ -28,7 +28,7 @@ function UserContainer({ userData, fetchUsers }) {
 						{
 							userData &&
 							userData.users &&
-							userData.users.map(user => <p>{user.name}</p>)}
+							userData.users.map(user => <p key={user.name}>{user.name}</p>)}
 						
 					</div>
 				</div>
